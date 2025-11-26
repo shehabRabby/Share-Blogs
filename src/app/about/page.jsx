@@ -16,7 +16,7 @@ const About = () => {
         <div className={styles.imgText}>
           <h1 className={styles.imgTitle}>Where Stories Find a Home</h1>
           <h2 className={styles.imgDesc}>
-            SareNest – A simple space to write, share & inspire.
+            StoryNest – A simple space to write, share & inspire.
           </h2>
         </div>
       </div>
@@ -25,7 +25,7 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>Who Are We?</h1>
           <p className={styles.desc}>
-            SareNest is a cozy corner of the internet built for writers,
+            StoryNest is a cozy corner of the internet built for writers,
             storytellers, and anyone who just wants to express their thoughts.
             Our goal is simple — make sharing ideas effortless, meaningful, and
             honestly… kinda fun. Here, every voice matters and every note has a
@@ -53,7 +53,7 @@ const About = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>What We Do?</h1>
           <p className={styles.desc}>
-            We built SareNest to make writing feel natural and enjoyable.
+            We built StoryNest to make writing feel natural and enjoyable.
             Everything you need as a creator is right here:
             <br />
             <br /> - Clean & distraction-free writing experience
