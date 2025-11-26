@@ -3,7 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            footer here
+            <div>©2025 StoryNest — All rights reserved</div>
+            <div></div>
         </div>
     );
 };
