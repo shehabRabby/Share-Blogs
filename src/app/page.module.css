@@ -3,6 +3,10 @@
   align-items: center;
   gap: 100px;
 }
+.mainTitle {
+  font-size: 100px;
+}
+
 
 .item {
   flex: 1;
