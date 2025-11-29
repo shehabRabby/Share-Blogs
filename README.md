@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShareBlog
 
-## Getting Started
+A modern, lightweight, and vibe-packed blogging platform where users can create, share, and explore posts with smooth UI, fast routing, and clean design.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+* 🔐 **User Authentication** — Login & Logout smoothly
+* 🌙 **Dark/Light Theme Toggle**
+* 🧭 **React Router & Next.js Routing**
+* 🎨 **TailwindCSS + Custom CSS Styling**
+* 🍃 **MongoDB Database Integration**
+* ⚡ **SweetAlert2 for Alerts & Prompts**
+* 📝 **Create / Read / Update / Delete Blog Posts**
+* 👤 **User Dashboard**
+* 📱 **Responsive UI**
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+
+* React
+* Next.js
+* React Router
+* TailwindCSS
+* Custom CSS
+* JavaScript
+
+### **Backend / Database**
+
+* Node.js
+* Express.js
+* MongoDB (Mongoose)
+
+### **Utilities**
+
+* SweetAlert2
+* Axios / Fetch API
+
+---
+
+## 📦 Installation & Setup
+
+### **1️⃣ Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/shareblog.git
+cd shareblog
+```
+
+### **2️⃣ Install Dependencies**
+
+```bash
+npm install
+```
+
+### **3️⃣ Create Environment Variables**
+
+Create a `.env` file:
+
+```
+MONGO_URI=your_mongodb_url
+NEXT_PUBLIC_API_URL=http://localhost:5000
+JWT_SECRET=your_secret
+```
+
+### **4️⃣ Run Development Server**
+
+Frontend:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Backend (if separate):
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run server
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+shareblog/
+├── components/
+├── pages/
+├── styles/
+├── public/
+├── utils/
+├── backend/ (optional)
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Key Functionalities
 
-## Deploy on Vercel
+### **🔹 Authentication**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* User login
+* User logout
+* JWT-based auth
+* Protected routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **🔹 Blog Management**
+
+* Add new blog
+* Edit blog
+* Delete blog
+* See all posts
+
+### **🔹 UI/UX**
+
+* Dark theme support
+* Clean and simple layout
+* Toast messages using SweetAlert2
+
+---
+
+## 🧪 API Endpoints (If using custom backend)
+
+```
+POST /api/auth/login
+POST /api/auth/register
+GET  /api/blogs
+POST /api/blogs
+PATCH /api/blogs/:id
+DELETE /api/blogs/:id
+```
+
+---
+
+## 🛡️ Security
+
+* Password hashed using bcrypt
+* JWT secure cookies
+* MongoDB injection safe
+
+---
+
